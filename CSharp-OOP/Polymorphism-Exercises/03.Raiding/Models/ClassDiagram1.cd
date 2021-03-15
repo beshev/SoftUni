@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_03.Raiding.BaseHero">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAYAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>BaseHero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_03.Raiding.Rogue">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Rogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_03.Raiding.Druid">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Druid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_03.Raiding.Paladin">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Paladin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_03.Raiding.Warrior">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
