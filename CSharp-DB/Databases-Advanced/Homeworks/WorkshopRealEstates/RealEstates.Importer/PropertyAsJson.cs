@@ -1,0 +1,28 @@
+﻿namespace RealEstates.Importer
+{
+
+
+    public class PropertyAsJson
+    {
+        public string Url { get; set; }
+
+        public int Size { get; set; }
+
+        public int YardSize { get; set; }
+
+        public byte Floor { get; set; }
+
+        public byte TotalFloors { get; set; }
+
+        public string District { get; set; }
+
+        public int Year { get; set; }
+
+        public string Type { get; set; }
+
+        public string BuildingType { get; set; }
+
+        public int Price { get; set; }
+    }
+
+}
