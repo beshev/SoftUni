@@ -46,6 +46,21 @@ namespace Git.Services
                 .ToList();
         }
 
+        public IEnumerable<RepoViewModel> GetPrivate(string userId)
+        {
+            return this.db.Repositories
+                   .Where(x => !x.IsPublic && x.OwnerId == userId)
+                   .Select(x => new RepoViewModel
+                   {
+                       Id = x.Id,
+                       Name = x.Name,
+                       Owner = x.Owner.Username,
+                       CreatedOn = x.CreatedOn.ToString("MM/dd/yyyy HH:mm"),
+                       CommitsCount = x.Commits.Count()
+                   })
+                   .ToList();
+        }
+
         public Repository GetRepo(string id)
         {
             return this.db.Repositories.FirstOrDefault(x => x.Id == id);

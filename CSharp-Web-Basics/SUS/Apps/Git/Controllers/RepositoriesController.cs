@@ -18,7 +18,19 @@ namespace Git.Controllers
             var viewModel = this.repositoriesService.GetAll();
 
             return this.View(viewModel);
-        } 
+        }
+
+        public HttpResponse Private()
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            var viewModel = this.repositoriesService.GetPrivate(this.GetUserId());
+
+            return this.View(viewModel);
+        }
 
         public HttpResponse Create()
         {

@@ -10,6 +10,8 @@ namespace Git.Services
 
         IEnumerable<RepoViewModel> GetAll();
 
+        IEnumerable<RepoViewModel> GetPrivate(string userId);
+
         Repository GetRepo(string id);
     }
 }
