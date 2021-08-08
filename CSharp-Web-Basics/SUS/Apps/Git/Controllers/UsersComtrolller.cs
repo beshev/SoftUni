@@ -17,12 +17,22 @@ namespace Git.Controllers
 
         public HttpResponse Login()
         {
+            if (this.IsUserSignedIn())
+            {
+                return this.Redirect("/Repositories/All");
+            }
+
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Login(string username, string password)
         {
+            if (this.IsUserSignedIn())
+            {
+                return this.Redirect("/Repositories/All");
+            }
+
             var userId = this.usersService.GetUserId(username,password);
 
             if (userId == null)
@@ -37,12 +47,22 @@ namespace Git.Controllers
 
         public HttpResponse Register()
         {
+            if (this.IsUserSignedIn())
+            {
+                return this.Redirect("/Repositories/All");
+            }
+
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Register(RegisterInputModel model)
         {
+            if (this.IsUserSignedIn())
+            {
+                return this.Redirect("/Repositories/All");
+            }
+
             if (string.IsNullOrWhiteSpace(model.Username) || model.Username.Length < 5 || model.Username.Length > 20)
             {
                 return this.Error("The username should be between 5 and 20 characters.");
@@ -76,6 +96,14 @@ namespace Git.Controllers
             this.usersService.CreateUser(model.Username, model.Email, model.Password);
 
             return this.Redirect("/Users/Login");
+        }
+
+
+        public HttpResponse Logout()
+        {
+            this.SignOut();
+
+            return this.Redirect("/");
         }
     }
 }

@@ -34,6 +34,7 @@ namespace Git.Services
         public IEnumerable<RepoViewModel> GetAll()
         {
             return this.db.Repositories
+                .Where(x => x.IsPublic)
                 .Select(x => new RepoViewModel
                 {
                     Id = x.Id,
