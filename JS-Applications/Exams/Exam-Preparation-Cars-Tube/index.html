@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Tube</title>
+    <base href="/">
+    <link rel="stylesheet" href="/style/styles.css">
+    <script src="./src/app.js" type="module"></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Navigation -->
+        <header>
+            <nav id="nav-bar">
+                <a class="active" href="/" id="home-nav">Home</a>
+                <a href="/all-cars" id="all-cars-nav">All Listings</a>
+                <a href="/search-cars" id="search-nav">By Year</a>
+                <!-- Guest users -->
+                <div id="guest">
+                    <a href="/login" id="login-nav">Login</a>
+                    <a href="/register" id="register-nav">Register</a>
+                </div>
+                <!-- Logged users -->
+                <div id="profile">
+                    <a id="welcome-nav-id">Welcome username</a>
+                    <a href="/my-cars" id="my-cars-nav">My Listings</a>
+                    <a href="/create" id="create-car-nav">Create Listing</a>
+                    <a href="javascript:void(0)" onclick="window.onLogout()">Logout</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="site-content">
+
+        </main>
+
+        <footer>
+            <p>&copy; All rights reserved</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
