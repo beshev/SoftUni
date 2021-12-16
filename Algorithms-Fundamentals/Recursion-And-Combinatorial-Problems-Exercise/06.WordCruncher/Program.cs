@@ -23,23 +23,23 @@ namespace _06.WordCruncher
             Console.WriteLine(String.Join(Environment.NewLine, wordsSet));
         }
 
-        private static void WordCruncher(string currentString = "")
+        private static void WordCruncher(string currentString = "", string usedWords = "")
         {
-            if (currentString.Replace(" ", "") == targetString)
+            if (currentString == targetString)
             {
-                wordsSet.Add(currentString.TrimStart());
+                wordsSet.Add(usedWords.TrimStart());
                 return;
             }
 
             for (int i = 0; i < words.Count; i++)
             {
                 var currentWord = words[i];
-                var stringToAppend = currentString + " " + currentWord;
+                var stringToAppend = currentString + currentWord;
 
-                if (targetString.StartsWith(stringToAppend.Replace(" ", "")))
+                if (targetString.StartsWith(stringToAppend))
                 {
                     words.RemoveAt(i);
-                    WordCruncher(stringToAppend);
+                    WordCruncher(stringToAppend, usedWords + " " + currentWord);
                     words.Insert(i, currentWord);
                 }
             }
