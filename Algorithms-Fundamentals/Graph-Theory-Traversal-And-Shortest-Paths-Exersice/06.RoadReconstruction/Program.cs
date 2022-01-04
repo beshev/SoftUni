@@ -37,7 +37,6 @@ namespace _06.RoadReconstruction
                     {
                         continue;
                     }
-
                     checkedEdges.Add($"{node}{graph[node][child]}");
 
                     ResetVisited();
@@ -73,7 +72,7 @@ namespace _06.RoadReconstruction
             }
         }
 
-        private static void TraversAllStreets(int node, int parent = 0)
+        private static void TraverseAllStreets(int node, int parent = 0)
         {
             if (node != parent && deletedEdge[node] && deletedEdge[parent])
             {
