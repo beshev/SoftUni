@@ -49,7 +49,7 @@ namespace _06.RoadReconstruction
                         continue;
                     }
 
-                    TraversAllStreets(node);
+                    TraverseAllStreets(node);
 
                     if (!visited.All(x => x))
                     {
@@ -90,7 +90,7 @@ namespace _06.RoadReconstruction
             {
                 if (!visited[child])
                 {
-                    TraversAllStreets(child, node);
+                    TraverseAllStreets(child, node);
                 }
             }
         }
