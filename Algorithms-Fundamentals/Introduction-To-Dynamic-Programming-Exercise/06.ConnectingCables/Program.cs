@@ -14,8 +14,6 @@ namespace _06.ConnectingCables
                 .ToArray();
 
             int[,] table = new int[cables.Length + 1, cables.Length + 1];
-            var result = 0;
-            var maxCon = 0;
 
             for (int row = 1; row < table.GetLength(0); row++)
             {
@@ -26,12 +24,6 @@ namespace _06.ConnectingCables
                     if (cable == col)
                     {
                         table[row, col] = table[row - 1,col - 1] + 1;
-                        result = table[row, col];
-
-                        if (result > maxCon)
-                        {
-                            maxCon = result;
-                        }
                     }
                     else
                     {
@@ -40,7 +32,7 @@ namespace _06.ConnectingCables
                 }
             }
 
-            Console.WriteLine($"Maximum pairs connected: {maxCon}");
+            Console.WriteLine($"Maximum pairs connected: {table[cables.Length, cables.Length]}");
         }
 
         private static void PrintMatrix(int[,] matrix)
