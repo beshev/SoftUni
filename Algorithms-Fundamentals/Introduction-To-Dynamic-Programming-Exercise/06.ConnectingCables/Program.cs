@@ -34,18 +34,5 @@ namespace _06.ConnectingCables
 
             Console.WriteLine($"Maximum pairs connected: {table[cables.Length, cables.Length]}");
         }
-
-        private static void PrintMatrix(int[,] matrix)
-        {
-            for (int row = 0; row < matrix.GetLength(0); row++)
-            {
-                for (int col = 0; col < matrix.GetLength(1); col++)
-                {
-                    Console.Write(matrix[row, col] + " ");
-                }
-
-                Console.WriteLine();
-            }
-        }
     }
 }
