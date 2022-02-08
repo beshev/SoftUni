@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CheapTownTour", "02.Chea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Undefined", "03.Undefined\03.Undefined.csproj", "{1DF8EE4A-CEB0-4949-979F-35DCC9B3AD1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BigTrip", "04.BigTrip\04.BigTrip.csproj", "{61231726-793D-41E1-A5F2-F1B021AC6260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1DF8EE4A-CEB0-4949-979F-35DCC9B3AD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DF8EE4A-CEB0-4949-979F-35DCC9B3AD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DF8EE4A-CEB0-4949-979F-35DCC9B3AD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61231726-793D-41E1-A5F2-F1B021AC6260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61231726-793D-41E1-A5F2-F1B021AC6260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61231726-793D-41E1-A5F2-F1B021AC6260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61231726-793D-41E1-A5F2-F1B021AC6260}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
