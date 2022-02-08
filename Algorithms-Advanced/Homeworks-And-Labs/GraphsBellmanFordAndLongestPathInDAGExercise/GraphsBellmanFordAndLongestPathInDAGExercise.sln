@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MostReliablePath", "01.MostReliablePath\01.MostReliablePath.csproj", "{DAEECF43-0F8D-4EA4-825F-BE4869CB789E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.MostReliablePath", "01.MostReliablePath\01.MostReliablePath.csproj", "{DAEECF43-0F8D-4EA4-825F-BE4869CB789E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CheapTownTour", "02.CheapTownTour\02.CheapTownTour.csproj", "{9BCC7D67-A911-41EB-B978-1A968C583CDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DAEECF43-0F8D-4EA4-825F-BE4869CB789E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAEECF43-0F8D-4EA4-825F-BE4869CB789E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAEECF43-0F8D-4EA4-825F-BE4869CB789E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCC7D67-A911-41EB-B978-1A968C583CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCC7D67-A911-41EB-B978-1A968C583CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCC7D67-A911-41EB-B978-1A968C583CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCC7D67-A911-41EB-B978-1A968C583CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
