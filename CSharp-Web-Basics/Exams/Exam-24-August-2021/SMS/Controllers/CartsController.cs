@@ -1,9 +1,7 @@
 ﻿using BasicWebServer.Server.Attributes;
 using BasicWebServer.Server.Controllers;
 using BasicWebServer.Server.HTTP;
-using SMS.Services.CardService;
-using SMS.Services.Users;
-using SMS.ViewModel.Products;
+using SMS.Services.CartsService;
 
 namespace SMS.Controllers
 {
