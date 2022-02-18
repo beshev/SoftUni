@@ -64,7 +64,7 @@ namespace _02.MaximumTasksAssignment
                 {
                     if (graph[task, person] > 0)
                     {
-                        Console.WriteLine($"{(char)(64 + person)}-{task - peopleCount}");
+                        Console.WriteLine($"{ (char)(64 + person) }-{task - peopleCount}");
                     }
                 }
             }
