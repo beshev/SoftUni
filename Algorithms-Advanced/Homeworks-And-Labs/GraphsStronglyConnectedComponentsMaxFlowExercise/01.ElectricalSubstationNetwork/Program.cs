@@ -2,35 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _01.StronglyConnectedComponents
+namespace _01.ElectricalSubstationNetwork
 {
     internal class Program
     {
         static void Main()
         {
-            var nodes = int.Parse(Console.ReadLine());
+            var n = int.Parse(Console.ReadLine());
             var lines = int.Parse(Console.ReadLine());
 
-            var graph = new List<int>[nodes];
-            var reversedGraph = new List<int>[nodes];
-
-            for (int node = 0; node < nodes; node++)
+            var graph = new List<int>[n];
+            var reversedGraph = new List<int>[n];
+            for (int node = 0; node < n; node++)
             {
                 graph[node] = new List<int>();
                 reversedGraph[node] = new List<int>();
             }
-
 
             for (int i = 0; i < lines; i++)
             {
                 var row = Console.ReadLine()
                     .Split(", ", StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
-                    .ToArray();
+                    .ToList();
 
                 var node = row[0];
 
-                for (int j = 1; j < row.Length; j++)
+                for (int j = 1; j < row.Count; j++)
                 {
                     var child = row[j];
 
@@ -39,7 +37,7 @@ namespace _01.StronglyConnectedComponents
                 }
             }
 
-            bool[] visited = new bool[graph.Length];
+            var visited = new bool[n];
             var sorted = new Stack<int>();
 
             for (int node = 0; node < graph.Length; node++)
@@ -47,24 +45,23 @@ namespace _01.StronglyConnectedComponents
                 DFS(node, graph, visited, sorted);
             }
 
-            visited = new bool[graph.Length];
+            visited = new bool[n];
 
-            Console.WriteLine($"Strongly Connected Components:");
             while (sorted.Count > 0)
             {
                 var node = sorted.Pop();
-                var components = new Stack<int>();
 
                 if (visited[node])
                 {
                     continue;
                 }
 
+                var components = new Stack<int>();
                 DFS(node, reversedGraph, visited, components);
 
-                Console.WriteLine($"{{{string.Join(", ", components)}}}");
-            }
+                Console.WriteLine(string.Join(", ", components));
 
+            }
         }
 
         private static void DFS(int node, List<int>[] graph, bool[] visited, Stack<int> result)
