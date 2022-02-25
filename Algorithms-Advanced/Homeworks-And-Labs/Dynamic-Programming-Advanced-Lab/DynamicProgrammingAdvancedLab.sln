@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RodCutting", "01.RodCutting\01.RodCutting.csproj", "{A77F3FD2-79A2-4751-A049-AE52932A056B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RodCutting", "01.RodCutting\01.RodCutting.csproj", "{A77F3FD2-79A2-4751-A049-AE52932A056B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Knapsack", "02.Knapsack\02.Knapsack.csproj", "{A8080ABC-D546-4A4D-BB11-EC1B4B9C93E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8080ABC-D546-4A4D-BB11-EC1B4B9C93E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8080ABC-D546-4A4D-BB11-EC1B4B9C93E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8080ABC-D546-4A4D-BB11-EC1B4B9C93E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8080ABC-D546-4A4D-BB11-EC1B4B9C93E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
