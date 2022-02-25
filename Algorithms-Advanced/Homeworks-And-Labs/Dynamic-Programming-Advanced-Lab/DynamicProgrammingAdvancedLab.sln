@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RodCutting", "01.RodCutting\01.RodCutting.csproj", "{A77F3FD2-79A2-4751-A049-AE52932A056B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77F3FD2-79A2-4751-A049-AE52932A056B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D9FDCE8-0940-47F2-9685-15A81FC79B81}
+	EndGlobalSection
+EndGlobal
