@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BattlePoints", "02.Battl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.LongestStringChain", "03.LongestStringChain\03.LongestStringChain.csproj", "{04F0E0E2-AB18-4758-9932-B9D1AE961FCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.LongestZigzagSubsequence", "04.LongestZigzagSubsequence\04.LongestZigzagSubsequence.csproj", "{DFD20FAA-0F64-4100-8696-D2CA8C77A605}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{04F0E0E2-AB18-4758-9932-B9D1AE961FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04F0E0E2-AB18-4758-9932-B9D1AE961FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04F0E0E2-AB18-4758-9932-B9D1AE961FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD20FAA-0F64-4100-8696-D2CA8C77A605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD20FAA-0F64-4100-8696-D2CA8C77A605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD20FAA-0F64-4100-8696-D2CA8C77A605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD20FAA-0F64-4100-8696-D2CA8C77A605}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
