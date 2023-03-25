@@ -1,0 +1,13 @@
+body {
+    background-color: #f9f7cf;
+}
+
+header, footer {
+    background-color: #f2dcbb;
+    width: 480px;
+    padding: 15px;
+}
+
+main p {
+    padding: 5px;
+}
