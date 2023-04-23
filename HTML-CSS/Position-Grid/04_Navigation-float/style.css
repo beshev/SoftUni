@@ -1,0 +1,98 @@
+html {
+    font-family: Georgia, serif;
+    line-height: 19px;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+main {
+    position: absolute;
+    width: 70%;
+    left: 0;
+}
+
+img {
+    padding: 5px;
+    margin: 0px 10px 10px 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    border: solid black;
+}
+
+.first-img {
+    float: right;
+}
+
+.second-image {
+    float: left;
+}
+
+a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    grid-area: header;
+}
+
+.header p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header p,
+.header ul li{
+    display: inline-block;
+}
+
+.header ul li{
+    margin: 10px;
+}
+
+.nav-bar{
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+aside {
+    position: absolute;
+    right: 0px;
+    width: 23%;
+}
+
+aside ul li {
+    line-height: 22px;
+}
+
+.left {
+    position: relative;
+    display: inline-block;
+    opacity: 0.5;
+    width: 36%;
+    height: 200px;
+    border-left: solid gray 1px;
+    padding-left: 2%;
+    vertical-align: top;
+    font-family: Georgia, serif;
+}
+
+.author-name {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+.right {
+    display: inline-block;
+    padding-right: 3%;
+    width: 48%;
+}
