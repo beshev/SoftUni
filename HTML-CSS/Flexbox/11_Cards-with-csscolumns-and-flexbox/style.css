@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: rgb(238, 238, 238);
+}
+
+.cards-layou {
+    background-color: #fff;
+    width: 214px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cards-layou footer {
+    padding: 10px;
+}
+
+.cards-layou section {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+h2 {
+    flex-basis: 100%;
+}
