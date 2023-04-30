@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    text-align: center;
+}
+
+section {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.title {
+    flex-basis: 100%;
+}
+
+.day {
+    flex-basis: 19.5%;
+}
+
+.weekend {
+    flex-basis: 49.5%;
+}
+
+span {
+    display: inline-block;
+    height: 10vw;
+    border: 1px solid black;
+}
+
+.notes {
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.notes span {
+    flex-basis: 49%;
+}
