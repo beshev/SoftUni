@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+    display: flex;
+}
+
+.gallery ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery ul li {
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+
+.gallery ul li img {
+    max-width: 280px;
+}

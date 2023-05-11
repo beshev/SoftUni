@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0,0,0);
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}
+
+.container ul{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+
+.container ul li{
+    box-shadow: -2px 1px 19px -9px rgba(0,0,0,0.75);
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item {
+    background-color: black;
+    text-align: center;
+    flex-grow: 1;
+}
