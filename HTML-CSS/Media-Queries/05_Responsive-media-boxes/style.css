@@ -1,0 +1,46 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px -4px #000000;
+}
+
+section .content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+}
+
+section .content .content__btn {
+    margin-bottom: 30px;
+    width: 40%;
+    align-self: self-end;
+    color: #fff;
+    padding: 8px 10px;
+    background-color: rgb(0, 153, 0);
+}
+
+section img {
+    width: 100%;
+}

@@ -1,0 +1,121 @@
+body {
+    font-size: 12px;
+    background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+.content img {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.content .img-left {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+.content .img-right {
+    float: right;
+    margin: 0px 10px 10px 10px;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.title {
+    flex-basis: 92%;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+
+.content {
+    flex-basis: 70%;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+.quot {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quot blockquote {
+    font-family: Georgia, serif;
+    display: flex;
+    padding-left: 30x;
+    opacity: 0.5;
+    border-left: 3px solid gray;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.quot blockquote p {
+    flex-basis: 100%;
+}
+
+.quot blockquote span {
+    justify-self: flex-end;
+}
+
+@media (max-width: 600px) {
+    .quot {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .content .img-left {
+        float: unset;
+    }
+    
+    .content .img-right {
+        float: unset;
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1300px) {
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1800px) {
+    body {
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    width: 100vw;
+    background-color: #eee;
+}
+
+table {
+    text-align: center;
+    background-color: #fff;
+    width: 90vw;
+    margin: auto;
+}
+
+thead {
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+}
+
+tbody tr:nth-child(1) {
+    background-color: gainsboro;
+}
+
+table,
+tbody,
+thead,
+table tr,
+table td,
+table th {
+    border-bottom: solid 1px rgb(177, 176, 176);
+}
